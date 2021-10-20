@@ -105,7 +105,7 @@ const lolkey = '78bd89cd7b4d6205e3e18061'
 			const imagebb = "https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg"
 
 let blocked = []
-limitawal = "100" 
+limitawal = "10" 
 namabot = setting.botname
 owner_name = setting.ownername
 owner_number = setting.ownerNumber
@@ -509,7 +509,6 @@ Minat? Pm wa.me/${owner_number}`,
 				return _user[Math.floor(Math.random() * _user.length)].id
 				}
 				const sendTextWithMentions = (teks, member, id) => {
-				(id == null || id == undefined || id == false) ? Zeeone.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": member } }) : Zeeone.sendMessage(from, teks.trim(), extendedText, { quoted: Ofc, contextInfo: { "mentionedJid": member } })
 				} 
 			function monospace(string) {
 				return '```' + string + '```'
@@ -883,8 +882,8 @@ Minat? Pm wa.me/${owner_number}`,
 			}
 					const fakefoto = { key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast"}: {})}, message: {imageMessage: {caption: `${ucapannya}`, jpegThumbnail: thumbnail}}}
 					const fakevideo = { key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast"}: {})}, message: {videoMessage: {caption: `${ucapannya}`, jpegThumbnail: thumbnail}}}
-					const fakelokasi = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {locationMessage: {degreesLatitude: -7.0389318, degreesLongitude: 113.8969749, name: 'Rusia', address: '@ZeeoneOfc', jpegThumbnail: thumbnail}}}
-					const fakekontak = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {contactMessage: {displayName: `${ucapannya}`, vcard: 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'N:Bot;Lord;Userbot;;\n' + 'FN: SUBSCRIBE YT ZEEONE OFC\n' + 'item1.TEL;waid=62887435047326:+62887435047326\n' + 'item1.X-ABLabel:Telepon\n' + 'END:VCARD'}}}
+					const fakelokasi = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {locationMessage: {degreesLatitude: -7.0389318, degreesLongitude: 113.8969749, name: 'Rusia', address: '@Trito', jpegThumbnail: thumbnail}}}
+					const fakekontak = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {contactMessage: {displayName: `${ucapannya}`, vcard: 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'N:Trito\n' + 'FN: Lolita Bot\n' + 'item1.TEL;waid=6285888258313:+6285888258313\n' + 'item1.X-ABLabel:Telepon\n' + 'END:VCARD'}}}
 					const faketoko = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {productMessage: {product: {currencyCode: "BRL", title: `${ucapannya}`, priceAmount1000: 0, productImageCount: 0, productImage: {jpegThumbnail: thumbnail}}, businessOwnerJid: `${numbernye}@s.whatsapp.net`}}}
 					const fakedoc = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, ...(from ? {remoteJid: "status@broadcast" } : {}) }, message: {documentMessage: {mimetype: 'application/octet-stream', title: `${ucapannya}`, pageCount: 0, fileName: `${ucapannya}`, jpegThumbnail: thumbnail}}}
 					const fakeinvite = {key: {fromMe: false, participant: `${numbernye}@s.whatsapp.net`, remoteJid: `${numbernye}@s.whatsapp.net`}, message: {groupInviteMessage: {groupJid: from, inviteCode: `${ucapannya}`, groupName: groupName, caption: `${ucapannya}`, jpegThumbnail: thumbnail}}}
@@ -1573,7 +1572,14 @@ Alasan : ${reason}`, [sender], true)
 										sendButLocation(from, `${mess.sewabot}`, `Sewa bot om?`, {jpegThumbnail: thumbnail}, gakloo, {contextInfo: { mentionedJid: [sender]}})
 										break
 						case 'donasi':
-									reply('Isi sendiri')
+									reply('┏━━°❀❬ *DONASI* ❭❀°━━┓
+┣➥ *THREE:* 6289607997717
+┣➥ *Dana:* 6285888258313
+┣➥ *Gopay:* 6285888258313
+┣➥ *Ovo:* 6285888258313
+┃ 「 *Chat OWNER* 」
+┃ > *Ingin donasi? Wa.me/6285888258313*
+┗━━━━━━━━━━━━━━━━')
 									break
 						case 'join':case 'joingc':
 									if (!q) return reply('Linknya?')
